@@ -16,7 +16,7 @@
       <br>
       {{ end }}
       <center>
-        {{ .Summary }}
+        {{ .Summary  | truncate 100}}
         <br><br>
         {{ range .Params.Tags }}
         <a class="tag" href="/tags/{{ . }}">{{ . }}</a>
